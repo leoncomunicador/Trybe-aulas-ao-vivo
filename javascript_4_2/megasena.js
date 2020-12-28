@@ -10,4 +10,21 @@ let sixthNumber = Math.ceil(Math.random() * 60);
 
 megaSenaNumbers = [firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, sixthNumber];
 
-console.log(megaSenaNumbers);
+let turma8Play = [7, 16, 28, 31, 37, 55];
+
+let numbersOfHits = 0;
+
+for (let i = 0; i < turma8Play.length; i += 1) {
+    let playedNumber = turma8Play[i];
+    for (let j = 0; j < megaSenaNumbers.length; j += 1) {
+        let megaSenaNumber = megaSenaNumbers[j];
+        if (playedNumber === megaSenaNumber) {
+            numbersOfHits += 1;
+        }
+    }
+}
+
+
+console.log(`Números sorteados: ${megaSenaNumbers}`);
+console.log(`Nossas tentativas: ${turma8Play}`);
+console.log(`Total de acertos: ${numbersOfHits}`);
