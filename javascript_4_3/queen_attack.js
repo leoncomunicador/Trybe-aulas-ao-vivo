@@ -3,8 +3,8 @@ let posicaoRainhaLinha = 4;
 let posicaoRainhaColuna = 4;
 
 // Guarda a posição da Peça
-let posicaoPecaLinha = 2;
-let posicaoPecaColuna = 6;
+let posicaoPecaLinha = 7;
+let posicaoPecaColuna = 1;
 
 let ataqueBemSucedido = false;
 
